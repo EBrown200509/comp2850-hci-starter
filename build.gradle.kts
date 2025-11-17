@@ -13,9 +13,7 @@ repositories {
     mavenCentral()
 }
 
-val ktorVersion = "2.3.11"
-val logbackVersion = "1.4.14"
-val pebbleVersion = "3.2.2"
+val ktorVersion = "2.3.12"
 
 dependencies {
     // Ktor server core
@@ -27,10 +25,10 @@ dependencies {
     implementation("io.ktor:ktor-server-call-logging-jvm:$ktorVersion")
 
     // Pebble templating
-    implementation("io.pebbletemplates:pebble:$pebbleVersion")
+    implementation("io.pebbletemplates:pebble:3.2.2")
 
     // Logging
-    implementation("ch.qos.logback:logback-classic:$logbackVersion")
+    implementation("ch.qos.logback:logback-classic:1.5.6")
 
     // CSV handling
     implementation("org.apache.commons:commons-csv:1.10.0")
